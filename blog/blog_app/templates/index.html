@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Welcome! {% endblock %}
+
+{% block content %} 
+
+<h1 style="text-align: center;"> Welcome to my simple blog!</h1>
+<h2 style="text-align: center;"> Here is btn to list of articles:</h2>
+
+<div class="main_btn_wrapper">
+  <a class="article_btn" href="{% url 'articles' %}">Read!</a>
+</div>
+
+{% endblock %}
